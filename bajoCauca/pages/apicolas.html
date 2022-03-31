@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Import Google Icon Font-->
+    <link href='../css/material_icons.css' rel='stylesheet'>
+    <!--Import materialize.css-->
+    <link type='text/css' rel='stylesheet' href='../css/materialize.css'  media='screen,projection'/>
+    <link type="text/css" href="../css/sweetalert2.css" rel="stylesheet" />
+
+    <link rel='stylesheet' href='../css/misEstilos.css'>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link rel="shortcut icon" href="../images/icono_grande.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  </head>
+
+  <body onload='alCargar()' >
+    
+    <!-- <ul id='dropdown1' class='dropdown-content'>
+     
+      <li><a href='#!'>Perfil</a></li>
+      <li><a href='#!'>Cambiar contraseña</a></li>
+      <li class='divider'></li>
+      <li><a href=''>Cerrar sesión</a></li>
+    </ul>
+
+    <ul id='dropdown2' class='dropdown-content'>
+     
+      <li><a href='#!'>Perfil</a></li>
+      <li><a href='#!'>Cambiar contraseña</a></li>
+      <li class='divider'></li>
+      <li><a href=''>Cerrar sesión</a></li>
+    </ul> -->
+
+    <div class='navbar-fixed'>
+      <nav class='green darken-2'>
+        <div class='container'>
+          <div class='nav-wrapper'>
+            <a href='#' data-target='slide-out' class='sidenav-trigger'><i class='material-icons'>menu</i></a>
+            <a href='../index.html' class='brand-logo'><i class='material-icons'>home</i></a>
+            <ul id='nav-mobile' class='right hide-on-med-and-down'>
+              <!-- <li><a href='#'>alexanderqp@gmail.com</a></li> -->
+              <!-- <li><a href='#'>Components</a></li>
+              <li><a href='#'>JavaScript</a></li> -->
+              <li><a  href='#!' class='dropdown-trigger' data-target='dropdown2'><span id="nombreProfesional"></span><i class='material-icons right'>arrow_drop_down</i></a></li>
+              
+            </ul>
+          </div>
+        </div>      
+      </nav>
+    </div>
+    
+    <!-- INICIO Navegacion -->
+
+
+    <!-- INICIO SIDENAV -->
+    <ul id='slide-out' class='sidenav sidenav-fixed invesible-top'>
+      <li><div class='user-view'>
+        <div class='background'>
+          <img src='../images/office6.jpg'>
+        </div>
+        <a href='#user'><img class='circle' src='../images/iconoPerfil2.jpg'></a>
+        <a href='#name' class='dropdown-trigger' data-target='dropdown1'><span class='white-text name' id="nombreProfesional2"></span></a>
+        <a href='#email' class='dropdown-trigger' data-target='dropdown1' ><span class='white-text email' id="emailProfesional"></span></a>
+      </div>
+    </li>
+      <!-- <li><a href='#!'><i class='material-icons'>cloud</i>First Link With Icon</a></li>
+      <li><a class='waves-effect' href='#!'>Link AlexQ</a></li> -->
+      
+     
+     <!--  <li><a class='waves-effect' href='#!'>Link</a></li>
+      <li><a class='waves-effect' href='#!'>Link</a></li>
+      <li><div class='divider'></div></li>
+      <li><a class='subheader'>Subheader</a></li>
+      <li><a class='waves-effect' href='#!'>Third Link With Waves</a></li> -->
+
+      <ul class='collapsible'>
+        <li>
+            <div class='collapsible-header waves-effect'><i class='material-icons'>public</i>APICOLAS</div>
+            <div class='collapsible-body'>
+              <ul>
+                <li><a href='apicolas.html'><i class='material-icons'>question_answer</i>Formulario</a></li>
+                <!-- <li><a href="#modal1" class="modal-trigger"><i class='material-icons'>view_list</i>Realizado</a></li> -->             
+                <li><div class='divider'></div></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li>
+            <div class='collapsible-header waves-effect'><i class='material-icons'>settings</i>PISCÍCOLAS</div>
+            <div class='collapsible-body'>
+              <ul>
+                <li><a href='piscicolas.html'><i class='material-icons'>question_answer</i>Formulario</a></li>
+                <!-- <li><a href="#modal2" class="modal-trigger"><i class='material-icons'>view_list</i>Realizado</a></li> -->             
+                <li><div class='divider'></div></li>
+              </ul>
+            </div>
+          </li>
+          
+         
+        </ul>
+    </ul>
+    <!-- FIN SIDENAV -->
+    
+
+<!-- INICIO contenido principal -->
+
+    <main class='container' id="principal">
+      <br>
+      <div class="row card valign-wrapper popout">
+        <div class="col s2">
+          <img src="../images/portafolioVerde.png" alt="portafolio" class=" responsive-img">
+        </div>
+        <div class="col s8 center-align">
+          <h4>Avancemos Bajo Cauca</h4>
+          <p>Herramienta de Valoración Ambiental (Organizaciones <strong>APÍCOLAS</strong>)</p>         
+        </div>
+        <div class="col s2">
+          <img src="../images/avancemos.png" alt="portafolio" class=" responsive-img">
+        </div>
+      </div>
+
+      <ul class='collapsible popout'>
+        <li class="active">
+          <div class='collapsible-header'><i class='material-icons'>account_balance</i>IDENTIFICACIÓN DE LA EMPRESA APÍCOLA</div>
+          <div class='collapsible-body'>
+
+            <!-- PRIMERA PARTE -->
+
+            <div class='row'>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix">search</i>
+                <input type="text" id="autocomplete-input" class="autocomplete">
+                <label for="autocomplete-input">Buscar Unidad Productiva</label>
+              </div>
+
+              
+             <!--  <div class="input-field col s12">
+                <select id='opciones' onchange='cambioOpciones();' >
+                  <option value="">Seleccionar organización</option>
+                  <optgroup label="CÁCERES:">                    
+                    <option value='1'>AGROASTURIAS</option>
+                    <option value='2'>AMAGROCAN</option>
+                    <option value='3'>APÍCOLA EL AHORRO</option>
+                    <option value='4'>ASOAGROPIAMONTE</option>
+                    <option value='5'>ASOGRANCA</option>
+                    <option value='6'>CANAÁN</option>
+                    <option value='7'>EL PROGRESO</option>
+                    <option value='8'>GOLDEN BEE</option>
+                    <option value='9'>LA ESMERALDA ALEJANDRO NUÑEZ</option>
+                    <option value='10'>PARAÍSOS DE MIEL</option>                              
+                  </optgroup>
+                  <optgroup label="CAUCASIA:">
+                    <option value='11'>APIARIO LOS AMIGOS</option>
+                    <option value='12'>APÍCOLA EL ESCONDIDO</option>
+                    <option value='13'>APÍCOLA EL FUTURO</option>
+                    <option value='14'>APÍCOLA EL PANAL</option>
+                    <option value='15'>APÍCOLA EL POLVILLO</option>
+                    <option value='16'>APÍCOLA EL PROGRESO</option>
+                    <option value='17'>APÍCOLA LA BENDICIÓN - ESTER MARÍA ARRIETA ARRIETA</option>
+                    <option value='18'>APÍCOLA LA BENDICIÓN - YIRA LILIANA ARRIETA ARRIETA</option>
+                    <option value='19'>APÍCOLA LA ESPERANZA - JUAN CARLOS ZURITA ROMERO</option>
+                    <option value='20'>APÍCOLA LA ESPERANZA - PAOLA ANDREA TAPIAS LÓPEZ</option>
+                    <option value='21'>APÍCOLA LA FE</option>
+                    <option value='22'>APÍCOLA LA PAULINA - CARLOS ALBERTO ARROYAVE LOPERA</option>
+                    <option value='23'>APÍCOLA LA PAULINA - MARÍA EPIFANÍA LOPERA DE ARROYAVE</option>
+                    <option value='24'>APÍCOLA LA VICTORIA</option>
+                    <option value='25'>APÍCOLA LAS FLORES</option>
+                    <option value='26'>APÍCOLA LOS AMIGOS</option>
+                    <option value='27'>APÍCOLA LOS ÁNGELES</option>
+                    <option value='28'>APÍCOLA LOS OLIVOS</option>
+                    <option value='29'>APÍCOLA VILLA ADRIANA</option>
+                    <option value='30'>LA BENDICIÓN DE DIOS - PEDRO JUAN OVIEDO GUZMÁN</option>
+                    <option value='31'>LA ESPERANZA - ANA RITA ARIAS MÉNDEZ</option>
+                    <option value='32'>LOTE 5 Y LOTE 9</option>
+                    <option value='33'>NUEVA ESPERANZA</option>                    
+                  </optgroup>
+                  <optgroup label="EL BAGRE:">
+                    <option value='34'>BUENA SUERTE</option>
+                    <option value='35'>DULCE MANJAR</option>
+                    <option value='36'>LA BENDICIÓN DE DIOS - EDER ENRIQUE PINTO PILA</option>
+                    <option value='37'>LA IDEA</option>
+                    <option value='38'>LA VIRGEN</option>
+                    <option value='39'>MANANTIAL</option>
+                  </optgroup>
+                  <optgroup label="NECHÍ:">
+                    <option value='40'>APIARIO EL CERRITO</option>
+                    <option value='41'>APIARIO EL FILO</option>
+                    <option value='42'>APIARIO EL INICIO</option>
+                    <option value='43'>APIARIO EL MANGUITO</option>
+                    <option value='44'>APIARIO EL PAPAYOTE</option>
+                    <option value='45'>APIARIO EL PIÑAL</option>
+                    <option value='46'>APIARIO EL PORVENIR</option>
+                    <option value='47'>APIARIO LA QUEBRADA</option>
+                    <option value='48'>APIARIO LAS ACACIAS</option>
+                    <option value='49'>APIARIO LOMA FRESCA</option>
+                    <option value='50'>APIARIO QUEMADO</option>
+                    <option value='51'>APIARIO RENACER</option>
+                    <option value='52'>APIARIO VILLA ZULIA</option>
+                    <option value='53'>APIARIO VIO MIEL</option>
+                    <option value='54'>APIARIO YIRETH - YORLEDIS - MEJIA</option>
+                    <option value='55'>EL RAYO</option>
+                    <option value='56'>LA ABUELA</option>
+                    <option value='57'>LA BENDICIÓN - OLME MAURICIO RIVAS CALIS</option>
+                    <option value='58'>LA BENDICIÓN DE DIOS - ENITH DEL CARMEN LIBERNA</option>
+                    <option value='59'>SOL Y LUNA</option>               
+                  </optgroup>
+
+                  <optgroup label="TARAZÁ:">                   
+                    <option value='60'>ALTO LOS LOROS</option>
+                    <option value='61'>APIARIO LA BENDICION - ARGENIDA MARÍA SIERRA COGOLLO</option>
+                    <option value='62'>APÍCOLA LAS MUÑECAS-DUMAR</option>
+                    <option value='63'>APÍCOLA RÍO RAYO</option>
+                    <option value='64'>BARRO BLANCO - JHON SUAREZ</option>
+                    <option value='65'>EL AREQUIPE</option>
+                    <option value='66'>EL CARMELO</option>
+                    <option value='67'>EL CAUCE</option>
+                    <option value='68'>EL CAUCHO</option>
+                    <option value='69'>EL GORGOJO</option>
+                    <option value='70'>EL SOLITO</option>
+                    <option value='71'>EL SOLITO - MARYARIS</option>
+                    <option value='72'>JALISCO</option>
+                    <option value='73'>LA CUENCA</option>
+                    <option value='74'>LA ESMERALDA</option>
+                    <option value='75'>LA ESPERANZA - RICARDO ANTONIO RICARDO PÉREZ</option>
+                    <option value='76'>LA ESPERANZA PUERTO ANTIOQUIA</option>
+                    <option value='77'>LA ESPERANZA QUINTERON</option>
+                    <option value='78'>LA FAMILY</option>
+                    <option value='79'>LA MICROCUENCA</option>
+                    <option value='80'>LAS MUÑECAS</option>
+                    <option value='81'>LOS ANGELES</option>
+                    <option value='82'>LUIS YANA</option>
+                    <option value='83'>RIO RAYO</option>
+                    <option value='84'>VALENTINA</option>
+                  </optgroup>
+
+                  <optgroup label="ZARAGOZA:">                                       
+                    <option value='85'>ABEJAS</option>
+                    <option value='86'>AMADAS</option>
+                    <option value='87'>ARIAS LOPEZ</option>
+                    <option value='88'>CAÑO CLARO</option>
+                    <option value='89'>DIOS PROVEERÁ</option>
+                    <option value='90'>DIOS PROVEERÁ - SAN JUAN DE PELUSA</option>
+                    <option value='91'>EL 50</option>
+                    <option value='92'>EL CERRITO</option>
+                    <option value='93'>EL JARDIN</option>
+                    <option value='94'>EL PALMAR</option>
+                    <option value='95'>EL PROGRESO - YESID FERNEY PALACIO DE DIEGO</option>
+                    <option value='96'>GERILUZ</option>
+                    <option value='97'>GERYLUZ - LUZ MARY SOLAR</option>
+                    <option value='98'>KELLY</option>
+                    <option value='99'>LA BATEA</option>
+                    <option value='100'>LA BENDICIÓN</option>
+                    <option value='101'>LA BENDICIÓN - EDISON TAMARA</option>
+                    <option value='102'>LA BENDICIÓN CORDERO ICACALES</option>
+                    <option value='103'>LA BENDICIÓN DE DIOS - CRISTOVALINA DE DIEGO</option>
+                    <option value='104'>LA BENDICIÓN DE DIOS - DIONISIA VILORIA</option>
+                    <option value='105'>LA BENDICIÓN DE DIOS - LUÍS FERNANDO MORELO</option>
+                    <option value='106'>LA BENDICIÓN DE DIOS - MARCIANA JUDITH PÉREZ PERTUZ</option>
+                    <option value='107'>LA BENDICIÓN DE DIOS - MARIA ROMERO</option>
+                    <option value='108'>LA BENDICIÓN DE DIOS - ROSA DEDIEGO</option>
+                    <option value='109'>LA BENDICIÓN DE DIOS - ROSMIRA ZAMBRANO</option>
+                    <option value='110'>LA BENDICIÓN DE DIOS MARI DE JESUS LARGO</option>
+                    <option value='111'>LA BENDICIÓN EL DOCE</option>
+                    <option value='112'>LA CIMA</option>
+                    <option value='113'>LA ESPERANZA</option>
+                    <option value='114'>LA ESPERANZA - ROSINA DEL CARMEN ALBA YENERIS</option>
+                    <option value='115'>LA ESPERANZA - SENITH ALZATE</option>
+                    <option value='116'>LA ESPERANZA - YORLEDIS SOLAR SILVA</option>
+                    <option value='117'>LA ESPERANZA EL PATO</option>
+                    <option value='118'>LA FÉ</option>
+                    <option value='119'>LA ILUSIÓN</option>
+                    <option value='120'>LA LUCHA</option>
+                    <option value='121'>LA VELENTINA</option>
+                    <option value='122'>LAS BRISAS - YOEL PEÑA</option>
+                    <option value='123'>LAS BRISAS - YONEDIS PEÑA</option>
+                    <option value='124'>LAS DELICIAS</option>
+                    <option value='125'>LAS GUARDIANAS</option>
+                    <option value='126'>LOS EXTENSIONISTA</option>
+                    <option value='127'>LOS EXTENSIONISTA - EDWIN TEJADA</option>
+                    <option value='128'>LOS EXTENSIONISTAS - YESICA RAMIREZ</option>
+                    <option value='129'>LOS RAMÍREZ</option>
+                    <option value='130'>MARGARITA</option>
+                    <option value='131'>MIRABU</option>
+                    <option value='132'>PRIMAVERA</option>
+                    <option value='133'>PUERTO AMOR</option>
+                    <option value='134'>SAIRA</option>
+                    <option value='135'>SAMUEL</option>
+                    <option value='136'>SOLI</option>
+                    <option value='137'>TRES HERMANOS</option>
+                    <option value='138'>VILLA ISAVAL</option>
+                    <option value='139'>VILLA LUISA</option>
+                  </optgroup>
+
+                 
+                </select>
+                <label>ORGANIZACIÓN</label>
+              </div> -->
+            
+             <!--  <input id='nombreOrganizacion' name='nombreOrganizacion' id ="nombreOrganizacion" type='hidden' placeholder="Nombre de la organización"> -->
+
+              <div class='input-field col s12'>
+                <i class="material-icons prefix">account_balance</i>
+                <input id='nombreOrganizacion' name='nombreOrganizacion' id ="nombreOrganizacion" type='text' placeholder="Nombre de la organización" disabled>
+                <label for='nombreOrganizacion'>Nombre organización</label>
+              </div>
+
+              <div class='input-field col s12'>
+                <i class="material-icons prefix">location_on</i>
+                <input id='ubicacion' name='ubicacion' id="ubicacion" type='text' placeholder="Ubicación" disabled>
+                <label for='ubicacion'>Ubicación</label>
+              </div>
+             
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix">business</i>
+                  <input id="nit" name="nit" id="nit" type="text" placeholder="NIT">
+                  <label for="nit">Nit</label>
+                </div>
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="telefono" name="telefono" type="tel" placeholder="Teléfono">
+                  <label for="telefono">Teléfono</label>
+                </div>               
+                              
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email" name="email" type="text" placeholder="email">
+                  <label for="email">Correo electrónico</label>
+                </div>
+                <div class="input-field col s12 m6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="representante" name="representante" type="text" placeholder="Representante">
+                  <label for="representante">Representante de la organización</label>
+                </div>                                 
+              
+                <div class='input-field col s12 m6'>
+                  <i class="material-icons prefix">view_stream</i>
+                  <input id='categoria' name='categoria' type='text' value='APICOLA' disabled>
+                  <label for='categoria'>Categoria</label>
+                </div>
+                <div class='input-field col s12 m6'>
+                  <i class="material-icons prefix">today</i>
+                  <input id='fechaDiligenciamiento' name='fechaDiligenciamiento' type='date' disabled >
+                  <label for='fechaDiligenciamiento'>Fecha de diligenciamiento</label>
+                </div>                 
+              
+              
+            </div>
+
+
+
+          </div>
+          
+        </li>
+        <div id="loader" class="center-align" hidden>
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          
+            <div class="spinner-layer spinner-red">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          
+            <div class="spinner-layer spinner-yellow">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          
+            <div class="spinner-layer spinner-green">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+          <p>Subiendo al servidor, espere por favor...</p>
+          </div>
+        <li>
+          <div class='collapsible-header'><i class='material-icons'>add_circle_outline</i>GESTIÓN EN SOSTENIBILIDAD AMBIENTAL</div>
+          <div class='collapsible-body'>
+
+            <!-- SEGUNDO BLOQUE -->
+            
+                <div class='col s12 center-align'>
+                  <h5 class='center-align'>LINEAS DE ACCIÓN</h5>
+                  <ul class='tabs tabs-fixed-width'>
+                    <li class='tab col s3 disabled'><a href='#xx'></a></li>
+                    <li class='tab col s3'><a href='#test1'>Gestión ambiental</a></li>
+                    <li class='tab col s3'><a href='#test2'>Gestión Recursos Naturales</a></li>
+                    <li class='tab col s3'><a href='#test3'>Cambio Climático</a></li>
+                    <li class='tab col s3'><a href='#test4'>Cultura Ambiental</a></li>
+                    <li class='tab col s3'><a href='#test5'>Otras Estrategias Ambientales</a></li>
+                    <li class='tab col s3 disabled'><a href='#xx'></a></li>
+                  </ul>
+                </div>
+                <div id='test1' class='col s12'>
+
+                  <P> <P><strong>1. Estrategia y equipo ambiental</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga1' type='radio' value='4' />
+                        <span>La organización cuenta con un equipo encargado del área ambiental y con una política, objetivos y metas definidos en temas ambientales. Se hace seguimiento y se gestiona (documentado).</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga1' type='radio' value='3.2' />
+                        <span>La organización cuenta con un encargado parcial de los temas ambientales y una estrategia fundamentada en requerimientos específicos externos.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga1' type='radio' value='2.4' />
+                        <span>Se tiene una estructura de gestión ambiental parcial orientada a la atención de temas puntuales.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga1' type='radio' value='1.6' />
+                        <span>La organización no cuenta con encargado ni estrategia ambiental.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga1' type='radio' value='0.8' />
+                        <span>No aplica, para este tipo de organizaciones no es necesario contar con un equipo encargado del área ambiental específicamente.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Aspectos e impactos</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga2' type='radio' value='4' />
+                        <span>La organización cuenta con una identificación de aspectos e impactos ambientales por procesos y se cuenta con herramientas de gestión, seguimiento y actualización documentadas.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga2' type='radio' value='2.7' />
+                        <span>Se identifican algunos aspectos e impactos aunque no se gestionan en su totalidad.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga2' type='radio' value='1.3' />
+                        <span>No se cuenta con una identificación de aspectos e impactos ambientales</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>3. Sellos y certificaciones ambientales</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga3' type='radio' value='4' />
+                        <span>La organización cuenta con un sello o certificación ambiental reconocida nacional e internacionalmente.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga3' type='radio' value='2.7' />
+                        <span>Tiene estructurada una gestión orientada a la obtención de un sello o una certificación ambiental, pero aún no se encuentra oficializada.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga3' type='radio' value='1.3' />
+                        <span>No se esta trabajando con miras a la obtención de un sello o certificación ambiental.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>4. Gestión normatividad ambiental</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga4' type='radio' value='4' />
+                        <span>La organización tiene identificados la totalidad de requerimientos legales ambientales, los prioriza y gestiona oportunamente.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga4' type='radio' value='3' />
+                        <span>Se identifican parcialmente los requerimientos legales ambientales y se gestionan de forma reactiva.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga4' type='radio' value='2' />
+                        <span>No se tienen identificadas las normas aplicables y no se tiene un plan de respuesta aunque no se han materializado.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga4' type='radio' value='1' />
+                        <span>Se han materializado riesgos ambientales a través de multas o sanciones por parte de las autoridades competentes.</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>5. Gestión de Riesgos ambientales</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga5' type='radio' value='4' />
+                        <span>La organización cuenta con una identificación y clasificación de riesgos ambientales con mecanismos de seguimiento y respuesta.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga5' type='radio' value='3' />
+                        <span>Se identifican algunos riesgos ambientales aunque no se cuenta con una categorización ni mecanismos de respuesta</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga5' type='radio' value='2' />
+                        <span>No se tienen identificados los riesgos ambientales de la organización aunque no se han materializado.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ga5' type='radio' value='1' />
+                        <span>Se han materializado riesgos ambientales a través de problemas con la comunidad.</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <div class='right-align'>
+                    <button class='waves-effect waves-light btn pulse validaGestionAmbiental green darken-2' id="validaGestionAmbiental">Siguiente </button>
+                  </div><br>
+
+                
+
+                 
+                </div>
+                <div id='test2' class='col s12'>
+                  <!--  <h5 class='center-align'>Gestión ambiental</h5> ----------------->
+ 
+                  <P> <P><strong>1. Gestión del agua para consumo</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn1' type='radio' value='2.9' />
+                         <span>Se tienen identificadas las fuentes de agua, se monitorean las calidades y cantidades y se realiza gestión orientada a la optimización del recurso.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn1' type='radio' value='1.9' />
+                         <span>Se identifican las fuentes de agua, se realizan mediciones parciales y no existe una gestión del recurso.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn1' type='radio' value='1' />
+                         <span>No se identifican las fuentes ni se realiza un seguimiento a los consumos.</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+                     <P> <P><strong>2. Gestión de vertimientos líquidos</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn2' type='radio' value='2.9' />
+                         <span>Se tienen identificados la totalidad de puntos de descarga, se tienen caracterizaos (cantidad y calidad) y se cuenta con sistemas de prevención y/o control que garanticen la reducción del impacto ambiental.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn2' type='radio' value='1.9' />
+                         <span>Se identifican algunos puntos de descarga aunque se desconoce la calidad de los vertimientos y se realizan acciones de mitigación aisladas</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn2' type='radio' value='1' />
+                         <span>No se realiza ninguna gestión sobre los vertimientos de la organización.</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+                     <P> <P><strong>3. Gestión de residuos sólidos</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn3' type='radio' value='2.9' />
+                         <span>Se tienen identificados los diferentes tipos de residuos, se clasifican de acuerdo a sus características y cantidades y se realizan las gestiones necesarias para su aprovechamiento y disposición adecuada.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn3' type='radio' value='1.9' />
+                         <span>Se clasifican algunos tipos de residuos, y se realizan gestiones parciales de separación, pero no existe un seguimiento que garantice su adecuado manejo.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn3' type='radio' value='1' />
+                         <span>No se tienen identificados ni caracterizados los residuos generados en la organización.</span>
+                       </label>
+                     </p>
+                    <hr/>
+ 
+                    <P> <P><strong>4. Materias Primas, Insumos y Sustancias Peligrosas</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn4' type='radio' value='2.8' />
+                         <span>Se identifican las materias primas e insumos de los  procesos y se gestionan de acuerdo a sus características con el fin de optimizar su uso, manejo y  y/o reemplazo por unas más amigables con el medio ambiente.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn4' type='radio' value='2.1' />
+                         <span>Se realiza una gestión de sustancias peligrosas con el fin de evitar emergencias, aunque no se contemplan cambios en las materias primas. </span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn4' type='radio' value='1.4' />
+                         <span>Se tienen identificadas  algunas sustancias o materias primas dañinas al medio ambiente, pero no se ha gestionado su cambio o control.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn4' type='radio' value='0.7' />
+                         <span>No aplica, esta organización no requiere de manejo de materias primas o sustancias peligrosas.</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+                     <P> <P><strong>5. Energéticos</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn5' type='radio' value='2.8' />
+                         <span>La organización tiene una gestión energética avanzada y ha implementado cambios a energías sostenibles en sus procesos.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn5' type='radio' value='2.1' />
+                         <span>La organización cuenta con una identificación de fuentes energéticas, registra los consumos por tipo de fuente y realiza su gestión orienta a la optimización de sus consumos.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn5' type='radio' value='1.4' />
+                         <span>Se identifican algunas fuentes energéticas, se monitorean los consumos, pero no se gestiona su optimización.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn5' type='radio' value='0.7' />
+                         <span>No se cuenta con una gestión energética definida.</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+ 
+ 
+                    <P> <P><strong>6. Ruido</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn6' type='radio' value='2.9' />
+                         <span>La organización tiene identificadas y monitoreadas sus fuentes de emisión de ruido y sus impactos, las controla y gestiona.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn6' type='radio' value='1.9' />
+                         <span>La organización cuenta con una identificación ni monitoreo del total de fuentes de emisión de ruido y no mide su impacto.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn6' type='radio' value='1' />
+                         <span>No aplica, pues la organización no cuenta con fuentes de emisión de ruido.</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+                     <P> <P><strong>7. Emisiones Atmosféricas</strong></P>
+                   </P>                  
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn7' type='radio' value='2.8' />
+                         <span>Se tienen identificadas las fuentes de emisión, se realizan monitoreos de contaminantes de forma periódica y se cuenta con  sistemas de gestión y/o control para la disminución de contaminación atmosférica.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn7' type='radio' value='2.1' />
+                         <span>Se tienen identificadas las fuentes de emisión, se realizan monitoreos de contaminantes de forma periódica, aunque no se realizan gestiones de reducción o control.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn7' type='radio' value='1.4' />
+                         <span>Se saben de la existencia de fuentes de emisión aunque no se monitorean ni gestionan.</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                        <input class='with-gap' name='grn7' type='radio' value='0.7' />
+                         <span>No aplica, pues la organización no tiene fuentes de emisión</span>
+                       </label>
+                     </p>
+                     <hr/>
+ 
+                    <div class='right-align'>
+                     <button class='waves-effect waves-light btn pulse ValidaGesRecNat green darken-2'>Siguiente </button>
+                   </div><br>
+ 
+ 
+                 </div>
+                <div id='test3' class='col s12'>
+
+                  <P> <P><strong>1. Estimaciones e inventarios</strong></P>
+                </P>                  
+                  <p>
+                    <label>
+                     <input class='with-gap' name='acc1' type='radio' value='6.7' />
+                      <span>La organización tiene identificadas sus fuentes de emisión y sumideros de gases efecto invernadero y cuantifica las cantidades emitidas y/o fijadas en términos de co2 equivalente al año</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                     <input class='with-gap' name='acc1' type='radio' value='4.4' />
+                      <span>La organización tiene identificadas las fuentes de emisión y sumideros de gases efecto invernadero, aunque no cuantifica sus emisiones.</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                     <input class='with-gap' name='acc1' type='radio' value='2.2' />
+                      <span>No se identifican fuentes de emisión de GEI ni sus emisiones</span>
+                    </label>
+                  </p>
+                  <hr/>
+
+                  <P> <P><strong>2. Estrategias de reducción y/o compensación de emisiones</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc2' type='radio' value='6.7' />
+                        <span>La organización cuenta con estrategias orientadas a la reducción y compensación de emisiones de gases efecto invernadero GEI.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc2' type='radio' value='4.4' />
+                        <span>Se cuenta con estrategias de reducción y/o compensación, aunque no son gestionadas ni monitoreadas ni revisadas.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc2' type='radio' value='2.2' />
+                        <span>La organización no cuenta con estrategias de reducción y/o compensación de emisiones de GEI</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>3. Verificación, comunicación y adaptación</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc3' type='radio' value='6.6' />
+                        <span>La organización cuenta con estrategias de adaptación al cambio climático, verifica sus emisiones, las gestiona y comunica a sus partes interesadas.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc3' type='radio' value='4.4' />
+                        <span>La organización realiza verificaciones o comunicación de emisiones de GEI sólo de forma esporádica y no obedecen a programas sistemáticos.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='acc3' type='radio' value='2.2' />
+                        <span>No se establecen estrategias de verificación ni rendición de cuentas al respecto.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <div class='right-align'>
+                      <button class='waves-effect waves-light btn pulse validaCambioClimatico green darken-2'>Siguiente </button>
+                    </div><br>
+
+
+
+                </div>
+                <div id='test4' class='col s12'>
+
+                  <P> <P><strong>1. Formación y cultura de colaboradores</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca1' type='radio' value='10' />
+                        <span>Se tiene establecido un programa de educación ambiental para colaboradores internos y externos, se evalúa y actualiza permanentemente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca1' type='radio' value='6.7' />
+                        <span>Se realizan talleres y capacitaciones ambientales en eventos puntuales durante el año.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca1' type='radio' value='3.3' />
+                        <span>Sólo se realizan capacitaciones ambientales de forma esporádica.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Promoción de cultura ambiental externa</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca2' type='radio' value='10' />
+                        <span>Se tienen programas para formación y promoción de buenas prácticas ambientales en sus diferentes grupos de interés.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca2' type='radio' value='6.7' />
+                        <span>Se cuentan con algunas iniciativas, aunque no obedecen a una estrategia y no se revisan ni se gestionan.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='ca2' type='radio' value='3.3' />
+                        <span>No se apoya este tipo de iniciativas</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                  <div class='right-align'>
+                    <button class='waves-effect waves-light btn pulse validaCulturaAmbiental green darken-2'>Siguiente </button>
+                  </div><br>                 
+                </div>
+
+                <div id='test5' class='col s12'>
+
+                  <P> <P><strong>1. Ciclo de vida</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea1' type='radio' value='5' />
+                        <span>La organización realiza un análisis de ciclo de vida del producto o servicio, mide y gestiona los resultados.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea1' type='radio' value='3.3' />
+                        <span>Se realizan algunas gestiones ambientales en la cadena de valor, aunque no obedecen a un programa de análisis de ciclo de vida.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea1' type='radio' value='1.7' />
+                        <span>Aún no se incorporan temas de gestión con enfoque de ciclo de vida.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Compras sostenibles</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea2' type='radio' value='5' />
+                        <span>La organización cuenta con políticas definidas de compras sostenibles y tiene lineamientos explícitos al respecto.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea2' type='radio' value='3.3' />
+                        <span>La organización realiza un proceso de compras  o servicio con algunos fundamentos de sostenibilidad y toma decisiones de impacto al respecto.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea2' type='radio' value='1.7' />
+                        <span>Aún no se incorporan temas de compras sostenibles en la organización.</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>3. Biodiversidad</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea3' type='radio' value='5' />
+                        <span>Se tienen políticas y estrategias de conservación de la biodiversidad para sus grupos de interés en zonas de influencia</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea3' type='radio' value='3.8' />
+                        <span>Se realizan algunos programas orientados a la promoción de cultura de conservación de biodiversidad, aunque no obedecen a una política.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea3' type='radio' value='2.5' />
+                        <span>No se incluye el tema de biodiversidad en la organización aunque puede tener relación con sus actividades.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea3' type='radio' value='1.3' />
+                        <span>No Aplica, pues la organización no tiene relacionamiento con temas de biodiversidad</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>4. Buenas prácticas Ambientales</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea4' type='radio' value='5' />
+                        <span>Existen políticas de implementación de estrategias de buenas prácticas ambientales en la organización, son implementadas y se les hace seguimiento.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea4' type='radio' value='3.8' />
+                        <span>Se han implementados cambios de proceso o cambios tecnológicos a la luz de los conceptos de buenas prácticas ambientales.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea4' type='radio' value='2.5' />
+                        <span>Se han revisado procesos a la luz de algunos conceptos de buenas prácticas ambientales.</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='oea4' type='radio' value='1.3' />
+                        <span>La organización no ha incluido al momento estrategias o conceptos de Buenas prácticas ambientales  en sus procesos</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+
+                 
+                  
+                  <div class='right-align'>
+                    <button class='waves-effect waves-light btn pulse ValidaOtrasEstrategias green darken-2'>SIGUIENTE CAPITULO</button>
+                  </div><br>
+                </div>
+
+          </div> <!-- FIN collapsible-body SEGUNDO BLOQUE-->
+        </li>
+
+        <li>
+          <div class='collapsible-header'><i class='material-icons'>add_circle_outline</i>ALINEACIÓN USAID</div>
+          <div class='collapsible-body'>
+
+            <!-- TERCER BLOQUE -->
+
+            <div class='col s12 center-align'>
+              <h5 class='center-align'>LINEAS DE ACCIÓN</h5>
+              <ul class='tabs'>
+                <li class='tab col s3 disabled'><a href='#xx'></a></li>
+                <li class='tab col s3'><a href='#testX1'>Monitoreo y Evaluación</a></li>
+                <li class='tab col s3'><a href='#testX2'>Operaciones</a></li>
+                <li class='tab col s3'><a href='#testX3'>Diseño y Planificación</a></li>                
+                <li class='tab col s3 disabled'><a href='#xx'></a></li>              
+              </ul>
+            </div>
+            <div id='testX1' class='col s12'>
+              
+              <P> <P><strong>1. Realizar mantenimientos periódicamente.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye1' type='radio' value='16.7' />
+                        <span>La organización, realiza revisión diariamente de las colmenas para garantizar su producción y comportamiento</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye1' type='radio' value='15.9' />
+                        <span>La organización, revisa ocasionalmente las colmenas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye1' type='radio' value='0.8' />
+                        <span>La Organización, no contempla la revisión de las colmenas</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Monitorear la presencia de posibles plagas</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye2' type='radio' value='16.6' />
+                        <span>La organización, realiza revisión diariamente de las colmenas para garantizar la sanidad de las abejas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye2' type='radio' value='15.9' />
+                        <span>La organización, revisa ocasionalmente las colmenas para garantizar la sanidad de las abejas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='mye2' type='radio' value='0.8' />
+                        <span>La Organización, se encuentra en estructuración de un proceso para revisión de la sanidad de las colmenas</span>
+                      </label>
+                    </p>
+                    <hr/>
+              
+              
+              <div class='right-align'>
+                <button class='waves-effect waves-light btn pulse validaMonitoreoEva green darken-2'>Siguiente</button>
+              </div><br>
+              
+            </div>
+            <div id='testX2' class='col s12'>
+
+              <P> <P><strong>1. Adoptar protocolos de seguridad.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op1' type='radio' value='2' />
+                        <span>La organización cuenta con un protocolo de seguridad y lo implementa </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op1' type='radio' value='1.5' />
+                        <span>La organización cuenta con un protocolo de seguridad que no está socializado</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op1' type='radio' value='1' />
+                        <span>La organización cuenta con un protocolo de seguridad pero no lo implementa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op1' type='radio' value='0.5' />
+                        <span>La organización se encuentra el proceso de estructuración de un protocolo de seguridad</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Aislar y/o controlar la zona </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op2' type='radio' value='2' />
+                        <span>La organización, tiene cercado el apiario a fin de evitar presencia de animales y personal no autorizado</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op2' type='radio' value='1.4' />
+                        <span>La organización, se encuentra en proceso de instalación del cercado para el apiario</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op2' type='radio' value='0.7' />
+                        <span>La organización, no cuenta con el cercado del apiario</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>3. Cumplir con los lineamientos de control sanitario </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op3' type='radio' value='2' />
+                        <span>La organización cuenta con un protocolo y lo implementa para la correcta disposición de los residuos</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op3' type='radio' value='1.5' />
+                        <span>La organización cuenta con un protocolo para la correcta disposición de los residuos pero falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op3' type='radio' value='1' />
+                        <span>La organización cuenta con un protocolo para la correcta disposición de los residuos pero no lo implementa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op3' type='radio' value='0.5' />
+                        <span>La organización, se encuentra en la construcción de un protocolo para la disposición de residuos</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>4. Contar con botiquines de primeros auxilios</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op4' type='radio' value='2' />
+                        <span>La organización cuenta con un botiquín de primeros auxilios de fácil acceso y dotado con los elementos necesarios</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op4' type='radio' value='1.5' />
+                        <span>La organización, cuenta con un botiquín de primeros auxilios,  faltan algunos elementos necesarios en caso de accidente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op4' type='radio' value='1' />
+                        <span>La organización, necesita ubicar el botiquín de primeros auxilios en un espacio de fácil acceso al momento de necesitarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op4' type='radio' value='0.5' />
+                        <span>La organización, cuenta con un botiquín de primeros auxilios pero necesita capacitarse para hacer uso correcto de sus elementos</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>5. Dotar y utilizar equipos de protección</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op5' type='radio' value='2' />
+                        <span>La organización, cuenta con el equipo de dotación para llevar a acabo cada una de las actividades productivas y lo usa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op5' type='radio' value='1.4' />
+                        <span>La organización, cuenta con el equipo de dotación para llevar a acabo cada una de las actividades productivas pero no lo usa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op5' type='radio' value='0.7' />
+                        <span>La organización, no cuenta con el equipo de dotación para llevar a acabo cada una de las actividades productivas</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>6. Aplicar protocolos de bioseguridad </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op6' type='radio' value='2' />
+                        <span>La organización, cuenta con un protocolo de bioseguridad y lo implementa para prevenir posibles riesgos o desinfección</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op6' type='radio' value='1.5' />
+                        <span>La organización, cuenta con un protocolo de bioseguridad para prevenir posibles riesgos o desinfección pero falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op6' type='radio' value='1' />
+                        <span>La organización, cuenta con un protocolo de bioseguridad para prevenir posibles riesgos o desinfección pero no lo implementa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op6' type='radio' value='0.5' />
+                        <span>La organización, se encuentra en la construcción de un protocolo de bioseguridad para prevenir posibles riesgos o desinfección</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>7. Acogerse a la normatividad de SST</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op7' type='radio' value='2' />
+                        <span>La organización, cuenta con herramientas y equipos de acuerdo a la normatividad </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op7' type='radio' value='1.4' />
+                        <span>La organización, se encuentra en la compra de las herramientas y equipos de acuerdo a la normatividad </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op7' type='radio' value='0.7' />
+                        <span>La organización, no cuenta las herramientas y equipos de acuerdo a la normatividad </span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>8. Señalizar claramente las zonas.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op8' type='radio' value='2' />
+                        <span>La organización, cuenta con los avisos dentro del apiario de cada ciclo productivo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op8' type='radio' value='1.4' />
+                        <span>La organización, se encuentra en la instalación de avisos dentro del apiario para cada ciclo productivo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op8' type='radio' value='0.7' />
+                        <span>La organización, no cuenta con los avisos para las señalización de cada uno de los ciclos productivos</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>9. Almacenamiento seguro de insumos</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op9' type='radio' value='2' />
+                        <span>La organización, cuenta con una bodega para almacenamiento de insumos y medicamentos </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op9' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la adecuación de un espacio para el almacenamiento de los insumos y medicamentos </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op9' type='radio' value='1' />
+                        <span>La organización, cuenta con una bodega para el almacenamiento de insumos y medicamentos pero no realiza la separación </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op9' type='radio' value='0.5' />
+                        <span>La organización, no cuenta con el espacio para el almacenamiento de insumos y medicamentos</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>10. Aprovechar  los residuos y/o subproductos </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op10' type='radio' value='2' />
+                        <span>La organización, comercializa los subproductos provenientes de la actividad productiva como polen, propoleo, cera entre otros</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op10' type='radio' value='1.4' />
+                        <span>La organización, se encuentra en la búsqueda de comercializadores para la venta de subproductos polen, propoleo, cera entre otros</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op10' type='radio' value='0.7' />
+                        <span>La organización, no comercializa los subproductos generados por la actividad productiva</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>11. Proteger las inversiones para evitar posibles pérdidas.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op11' type='radio' value='2' />
+                        <span>La organización, cuenta con seguros a fin de garantizar la protección de la inversión realizada en caso de accidente </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op11' type='radio' value='1' />
+                        <span>La organización, no cuenta con seguros a fin de garantizar la protección de la inversión realizada en caso de accidente </span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>12. Promover la mano de obra local.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op12' type='radio' value='2' />
+                        <span>La organización, contrata la mano de obra local con el fin de promover la economía dentro de la comunidad</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op12' type='radio' value='1' />
+                        <span>La organización, no contrata la mano de obra local lo que hace que no se cuente con empleo dentro de la misma comunidad</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>13. Adoptar métodos de control para enfermedades y plagas </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op13' type='radio' value='2' />
+                        <span>La organización cuenta con un protocolo y lo implementa para cumplir con el Manejo Integrado de plagas desde el PERSUAP</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op13' type='radio' value='1.5' />
+                        <span>La organización cuenta con un protocolo para cumplir con el Manejo Integrado de plagas  desde el PERSUAP pero no lo implementa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op13' type='radio' value='1' />
+                        <span>La organización cuenta con un protocolo para cumplir con el Manejo Integrado de plagas desde el PERSUAP falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op13' type='radio' value='0.5' />
+                        <span>La organización , se encuentra en la construcción de un protocolo para cumplir con el Manejo Integrado de plagas  desde el PERSUAP</span>
+                      </label>
+                    </p>
+                   <hr/>
+                   
+                   <P> <P><strong>14. Realizar actividades usando métodos y equipos permitidos </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op14' type='radio' value='2' />
+                        <span>La organización, tiene claro , identifica y cuenta con las herramientas adecuadas y permitidas para el uso en la unidad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op14' type='radio' value='1.4' />
+                        <span>La organización, no identifica cuales son las herramientas permitidas para usar en la unidad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op14' type='radio' value='0.7' />
+                        <span>La organización, no cuenta con las herramientas necesarias para el uso dentro de la unidad productiva</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <P> <P><strong>15. Adoptar métodos de control adecuados para especies introducidas </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op15' type='radio' value='2' />
+                        <span>La organización, cuenta con un protocolo y lo implementa para el manejo adecuado de especies invasoras </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op15' type='radio' value='1.5' />
+                        <span>La organización, cuenta con un protocolo para el manejo adecuado de especies invasoras  falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op15' type='radio' value='1' />
+                        <span>La organización, cuenta con un protocolo para el manejo adecuado de especies invasoras  pero no lo implementa</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op15' type='radio' value='0.5' />
+                        <span>La organización, se encuentra en la construcción de un protocolo para el manejo adecuado de especies invasoras </span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>16. Usar los ahumadores solo cuando sean necesarios </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op16' type='radio' value='2' />
+                        <span>La organización, utiliza el ahumador solo en los casos que se requieren para la actividad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op16' type='radio' value='1.4' />
+                        <span>La organización, utiliza el ahumador esporádicamente para la actividad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op16' type='radio' value='0.7' />
+                        <span>La organización, no utiliza el ahumador</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>17. Evitar las quemas.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op17' type='radio' value='2' />
+                        <span>La organización, evita realizar quemas y maneja otras alternativas agronómicas amigables con el medio ambiente </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op17' type='radio' value='1.4' />
+                        <span>La organización, promueve la concientización para evitar realizar quemas y cuidar el medio ambiente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='op17' type='radio' value='0.7' />
+                        <span>La organización, realiza quemas parciales para el control del rastrojo</span>
+                      </label>
+                    </p>
+                    <hr/>
+              
+              <div class='right-align'>
+                <button class='waves-effect waves-light btn pulse validaOperaciones green darken-2'>Siguiente</button>
+              </div><br>
+            </div>
+            <div id='testX3' class='col s12'>
+              
+              <P> <P><strong>1. Realizar planes de finca o planes de implementación</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp1' type='radio' value='2.3' />
+                        <span>La organización, cuenta con un plan de formación para mejorar su sistemas productivo y conservar los recursos naturales</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp1' type='radio' value='1.7' />
+                        <span>La organización, cuenta con un plan de formación para mejorar su sistemas productivo  falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp1' type='radio' value='1.2' />
+                        <span>La organización, cuenta con un plan de formación para mejorar su sistemas productivos  pero no lo implementa </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp1' type='radio' value='0.6' />
+                        <span>La organización, no cuenta con un plan de formación para mejorar su sistemas productivos y conservar los recursos naturales</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>2. Promover corredores de conectividad entre bosques </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp2' type='radio' value='2.3' />
+                        <span>La organización, realiza la interacción de la producción con los bosque naturales a través del sistema productivo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp2' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la implementación de realizar interacción de la producción con los bosques</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp2' type='radio' value='0.8' />
+                        <span>La organización, no implementa la interaccion de la producción con los bosques</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>3. Respetar los usos del suelo</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp3' type='radio' value='2.3' />
+                        <span>La organización, cuenta con los permisos de uso del suelo para la implementación de esa actividad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp3' type='radio' value='1.5' />
+                        <span>La organización, esta en la gestión de los permisos de uso del suelo para la implementación de esa actividad productiva</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp3' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con los permisos de uso del suelo</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>4. Utilizar materiales que provengan de sitios legales</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp4' type='radio' value='2.3' />
+                        <span>La organización, utiliza materiales legales y certificadas por la autoridad competente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp4' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la implementación de utilizar materiales legales y certificadas por la autoridad competente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp4' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con materiales legales y certificados por la autoridad competente</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>5. Ubicar las colmenas elevadas del piso </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp5' type='radio' value='2.3' />
+                        <span>La organización, cuenta con las colmenas elevadas del piso para evitar contaminación del producto</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp5' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la adecuación de elevar las colmenas para evitar la contaminación del producto</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp5' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con las colmenas elevadas para evitar la contaminación del producto</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>6. Involucrar a las comunidades locales</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp6' type='radio' value='2.3' />
+                        <span>La organización , trabaja de la mano con las comunidades locales donde se ejecuta el proyecto</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp6' type='radio' value='1.5' />
+                        <span>La organización, se encuentra trabajando para involucrar a las comunidades donde se ejecuta el proyecto</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp6' type='radio' value='0.8' />
+                        <span>La organización, no trabaja de la mano con las comunidades locales</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>7. Verificar condiciones necesarias de alimento (polen) y agua</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp7' type='radio' value='2.3' />
+                        <span>La organización, verifica permanentemente que se cuente con las condiciones necesarias de alimento en la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp7' type='radio' value='1.5' />
+                        <span>La organización, verifica ocasionalmente que se cuente con las condiciones necesarias de alimento en la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp7' type='radio' value='0.8' />
+                        <span>La organización, no verifica que se cuente con las condiciones necesarias de alimento en la zona</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>8. Garantizar ubicaciones en zonas seguras </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp8' type='radio' value='2.3' />
+                        <span>La organización, tienen ubicada el proyecto productivo en zona segura y menos vulnerables a derrumbes e inundaciones</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp8' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la adecuación del proyecto productivo en zona segura y menos vulnerables a derrumbes e inundaciones</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp8' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con el proyecto en zonas zona segura y menos vulnerables a derrumbes e inundaciones</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>9. Considerar los registros de información histórica  </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp9' type='radio' value='2.3' />
+                        <span>La organización, cuenta con información climática de la zona para trabajar adecuadamente de acuerdo a estas variables</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp9' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la recopilación de información sobre las variables del clima en la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp9' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con la información de las variables climáticas de la zona</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>10. Evitar tumbar árboles y/o extraer fauna.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp10' type='radio' value='2.3' />
+                        <span>La organización, no realiza tala de arboles y extracción de fauna en la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp10' type='radio' value='1.5' />
+                        <span>La organización, realiza tala de árboles parciales en la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp10' type='radio' value='0.8' />
+                        <span>La organización, realiza tala de arboles en la zona</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>11. Verificar que no hayan aplicaciones de pesticidas </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp11' type='radio' value='2.3' />
+                        <span>La organización, cuenta con un protocolo y lo implementa para el uso de agroquímicos de manera responsable</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp11' type='radio' value='1.7' />
+                        <span>La organización, cuenta con un protocolo para el uso de agroquímicos de manera responsable falta socializarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp11' type='radio' value='1.2' />
+                        <span>La organización, cuenta con un protocolo para el uso de agroquímicos de manera responsable falta implementarlo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp11' type='radio' value='0.6' />
+                        <span>La organización, no cuenta con un protocolo para el uso de agroquímicos de manera responsable</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>12. Obtener todos los permisos/licencias legales </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp12' type='radio' value='2.3' />
+                        <span>La organización, cuenta con los permisos requeridos para la producción</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp12' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la gestión de los permisos requeridos para la producción</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp12' type='radio' value='0.8' />
+                        <span>La organización, no cuenta con los permisos requeridos para la producción</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>13. Conservar y proteger los bosques existentes.</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp13' type='radio' value='2.3' />
+                        <span>La organización, realiza actividades de reforestación de especies nativas a fin de conservar los bosques de la zona</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp13' type='radio' value='1.2' />
+                        <span>La organización, no realiza actividades para la protección de los bosques</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>14. Conservar o reforestar las zonas de protección </strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp14' type='radio' value='2.3' />
+                        <span>La organización, realiza permanente mente reforestación en la zona de especies nativas con el fin de proteger las fuente hídricas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp14' type='radio' value='1.5' />
+                        <span>La organización, realiza actividades parciales de reforestación en la zona para el cuidado de las fuentes hídricas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp14' type='radio' value='0.8' />
+                        <span>La organización, no realiza protección de las fuentes hídricas</span>
+                      </label>
+                    </p>
+                    <hr/>
+
+                    <P> <P><strong>15. Usar materiales no tóxicos (ambientalmente aceptados).</strong></P>
+                  </P>                  
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp15' type='radio' value='2.3' />
+                        <span>La organización, usa productos amigables con el medio ambiente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp15' type='radio' value='1.5' />
+                        <span>La organización, se encuentra en la disminución de materiales tóxicos por materiales mas amigables con el medio ambiente</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                       <input class='with-gap' name='dyp15' type='radio' value='0.8' />
+                        <span>La organización , utiliza materiales tóxicos en la unidad productiva</span>
+                      </label>
+                    </p>
+                   <hr/>
+
+                   <!-- <p><strong>16. Adjuntar soporte.</strong></p>
+                   <form action="#">
+                    <div class="file-field input-field">
+                      <div class="waves-effect waves-light btn pulse green darken-2">
+                        <span>Adjuntar</span>
+                        <input onchange="onFileChange(event)" id='dyp16' type="file" accept=".png, .jpg, .jpeg">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" name="nombreAdj" >
+                      </div>
+                    </div>
+                  </form> -->
+                  
+
+             
+              <div class='right-align'>
+                <button class='waves-effect waves-light btn pulse validaDisenoPlanificacion green darken-2'>TERMINAR Y MOSTAR RESULTADOS</button>
+              </div>
+            </div>        
+
+          </div>
+        </li>
+
+        <li>
+          <div class='collapsible-header '><i class='material-icons'>insert_chart</i>RESULTADOS</div>
+          <div class='collapsible-body'>
+            
+            <div id="imprimir">
+
+              <div id="zonaResultados">            
+              </div>
+
+              <table class="highlight">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Capitulo</th>
+                    <th>Linea de acción</th>
+                    <th>Componente</th>
+                    <th>Estandar ideal</th>
+                  </tr>
+                </thead>
+                <tbody id="contenidoCierreBrechas">
+
+                </tbody> 
+                </table>
+              
+
+            </div>
+
+          </div>       
+        </li>
+
+        <!-- <li>
+          <div class='collapsible-header '><i class='material-icons'>report</i>CIERRE DE BRECHAS</div>
+          <div class='collapsible-body'>
+
+           
+          </div>       
+        </li>
+         -->
+      </ul>
+
+      <!-- <ul>
+        <li>
+          <a class="waves-effect waves-light btn btn-block blue darken-2 modal-trigger" href="#modal1"><i class="material-icons left">insert_chart</i>Encuestas realizadas</a>
+        </li>
+        <li>
+          <a class="waves-effect waves-light btn green darken-2" onclick="refrescarPagina()" ><i class="material-icons left">add</i>Nueva encuesta</a>
+         </li>
+        <li>
+          <a class="waves-effect waves-light btn blue-grey"><i class="material-icons left">cloud</i>Sincronizar con el servidor</a>
+         </li>       
+      </ul> -->
+
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating orange darken-2 modal-trigger" href="#modal1" data-position="top" data-tooltip="Realizado"><i class="material-icons">insert_chart</i></a></li>
+          <!-- <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li> -->
+          <li><a class="btn-floating green darken-2"><i class="material-icons" onclick="refrescarPagina()" data-position="top" data-tooltip="Nuevo">add</i></a></li>
+          <li><a class="btn-floating blue" onclick="enviarServerApicolas()"><i class="material-icons" data-position="top" data-tooltip="Sincronizar">cloud</i></a></li>
+        </ul>
+      </div>
+
+
+
+  
+  <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Encuestas Apícolas Realizadas</h4>
+        <!-- <button data-target="modal2" class="btn green darken-2 modal-trigger">Ver cierres de brechas</button>
+        <a class="waves-effect waves-light btn orange darken-2" onclick="descagarEncuestasApicolas()"><i class="material-icons left">cloud_download</i>Descargar encuestas  apícolas a CSV</a> -->              
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Fecha encuesta</th>
+              <th>Organización</th>              
+              <th>% Gestión en sostenibilidad ambiental</th>
+              <th>% Alineacón USAID</th>
+              <th>% Total encuesta</th>               
+            </tr>
+          </thead>
+          <tbody id="encuestasApicolasDigitadas">      
+            
+          </tbody>
+        </table>
+      </div>    
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">cerrar</a>      
+    </div>
+  </div>
+
+  <div id="modal2" class="modal  bottom-sheet">
+    <div class="modal-content">
+      <h4>Cierres de brechas Apícolas</h4>      
+      <!-- <a class="waves-effect waves-light btn orange darken-2" onclick="descagarCierresApicolas()"><i class="material-icons left">cloud_download</i>Descargar a CSV</a> -->   
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>#</th>            
+            <th>Fecha</th>
+            <th>Nombre Organización</th>            
+            <th>Capitulo</th>
+            <th>Linea de Acción</th>
+            <th>Componente</th>
+            <th>Acción de Mejora</th>            
+          </tr>
+        </thead>
+        <tbody id="cierresBrechasDigitadas">      
+          
+        </tbody>
+      </table>
+    </div>    
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">cerrar</a>      
+  </div>
+</div>
+
+
+<!-- <div id="modal3" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div> -->
+
+
+      
+    </main>
+    <!-- INICIO contenido principal -->
+
+
+
+    
+<br>
+    
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/jspdf.min.js"></script>
+    <script src='../js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='../js/materialize.min.js'></script>
+    <script type="text/javascript" src="../js/sweetalert2-10.js"></script>
+    <!-- Include Dexie -->
+    <script src="../js/dexie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src='../js/funcionesApicolas.js'></script>
+
+
+
+
+  </body>
+</html>

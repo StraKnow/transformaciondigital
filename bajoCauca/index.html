@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Import Google Icon Font-->
+    <link href="css/material_icons.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" href="css/misEstilos.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="images/icono_grande.png" type="image/x-icon">
+  </head>
+
+  <body onload='alCargar()'>
+    
+    <!-- <ul id="dropdown1" class="dropdown-content">
+     
+      <li><a href="#!">Perfil</a></li>
+      <li><a href="#!">Cambiar contraseña</a></li>
+      <li class="divider"></li>
+      <li><a href="">Cerrar sesión</a></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content">
+     
+      <li><a href="#!">Perfil</a></li>
+      <li><a href="#!">Cambiar contraseña</a></li>
+      <li class="divider"></li>
+      <li><a href="">Cerrar sesión</a></li>
+    </ul> -->
+
+    <div class="navbar-fixed">
+      <nav class="green darken-2">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="index.html" class="brand-logo"><i class="material-icons right">home</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <!-- <li><a href="#">alexanderqp@gmail.com</a></li> -->
+              <!-- <li><a href="#">Components</a></li>
+              <li><a href="#">JavaScript</a></li> -->
+              <li><a  href="#!" class="dropdown-trigger" data-target="dropdown2"><span id="nombreProfesional"></span><i class="material-icons right">arrow_drop_down</i></a></li>
+              
+            </ul>
+          </div>
+        </div>      
+      </nav>
+    </div>
+    
+    <!-- INICIO Navegacion -->
+
+
+    <!-- INICIO SIDENAV -->
+    <ul id="slide-out" class="sidenav sidenav-fixed invesible-top">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office6.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/iconoPerfil2.jpg"></a>
+        
+        <a href="#name" class="dropdown-trigger" data-target="dropdown1"><span class="white-text name" id="nombreProfesional2"></span></a>
+        <a href="#email" class="dropdown-trigger" data-target="dropdown1" ><span class="white-text email" id="emailProf"></span></a>
+      </div>
+    </li>
+      <!-- <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a class="waves-effect" href="#!">Link AlexQ</a></li> -->
+      
+     
+     <!--  <li><a class="waves-effect" href="#!">Link</a></li>
+      <li><a class="waves-effect" href="#!">Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header waves-effect"><i class="material-icons">public</i>APICOLAS</div>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="pages/apicolas.html"><i class="material-icons">question_answer</i>Formulario</a></li>
+              <!-- <li><a href="#"><i class="material-icons">view_list</i>Realizado</a></li>  -->            
+              <li><div class="divider"></div></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header waves-effect"><i class="material-icons">settings</i>PISCÍCOLAS</div>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="pages/piscicolas.html"><i class="material-icons">question_answer</i>Formulario</a></li>
+             <!--  <li><a href="#"><i class="material-icons">view_list</i>Realizado</a></li>   -->           
+              <li><div class="divider"></div></li>
+            </ul>
+          </div>
+        </li>
+          
+          <!-- <li>
+            <div class="collapsible-header waves-effect"><i class="material-icons">whatshot</i>Tercer componente</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li> -->
+        </ul>
+    </ul>
+    <!-- FIN SIDENAV -->
+    
+
+<!-- INICIO contenido principal -->
+
+    <main class="section container">        
+          <div class="row valign-wrapper popout">
+            <div class="col s2">
+              <img src="images/portafolioVerde.png" alt="portafolio" class=" responsive-img">
+            </div>
+            <div class="col s8 center-align">
+              <h4>Avancemos Bajo Cauca</h4>
+              <p>Herramienta de Valoración Ambiental</p>         
+            </div>
+            <div class="col s2">
+              <img src="images/avancemos.png" alt="portafolio" class=" responsive-img">
+            </div>
+          </div>
+
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="images/apicola.png">                
+                  </div>
+                  <div class="card-content">
+                    <!-- <span class="card-title activator grey-text text-darken-4">Encuesta para familias<i class="material-icons right">more_vert</i></span> -->
+                    <p><a class="waves-effect waves-light btn green darken-2" href="pages/apicolas.html">Ingresar</a>                                    
+                    </p>            
+                      <!-- <p class="right-align"><strong id="apicolas">APICOLAS</p> -->
+                  </div>
+                  <!-- <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Encuesta de familias<i class="material-icons right">close</i></span>                
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia cumque, odio numquam inventore mollitia magni nam similique ratione, amet sequi nihil voluptatem porro dolore nisi, saepe fuga expedita quae non?</p>                
+                  </div> -->
+                </div>
+              </div>
+            </div>
+    
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/piscicola.png">
+                  </div>
+                  <div class="card-content">
+                    <!-- <span class="card-title activator grey-text text-darken-4">Encuesta para comunidades<i class="material-icons right">more_vert</i></span> -->
+                    <p><a class="waves-effect waves-light btn green darken-2" href="pages/piscicolas.html">Ingresar</a></p>
+                    <!-- <p class="right-align"><strong id="pisciloas">PISCÍCOLAS</p> -->  
+                  </div>
+                  <!-- <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Encuesta de comunidades<i class="material-icons right">close</i></span>                
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, magnam. Pariatur laboriosam saepe fuga corrupti odit magni, expedita labore tempora dolor praesentium? Assumenda enim ipsam ad deserunt culpa, saepe fugiat.</p>
+                    
+                  </div> -->
+                </div>
+              </div>
+            </div>        
+          </div>
+    
+        
+        <br><br>
+      
+
+        
+       
+    
+      
+    </main>
+    <!-- INICIO contenido principal -->
+
+   
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>    
+    <script src="js/funcionesIndex.js"></script>   
+    
+
+
+
+  </body>
+</html>

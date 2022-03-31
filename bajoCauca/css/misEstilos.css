@@ -1,0 +1,184 @@
+@media only screen and (min-width: 1024px) {
+  .invesible-top {
+    top: 65px;
+  }
+}
+header,
+main,
+footer,
+.principal {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+/* Para cambiar el color de los inpust cuando tienen el foco */
+
+.input-field .prefix.active {
+  color: #00b36e;
+}
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00b36e;
+  -webkit-box-shadow: 0 1px 0 #00b36e;
+  box-shadow: 0 1px 0 0 #00b36e;
+}
+input:not([type]):focus:not([readonly]) + label,
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly])
+  + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="search"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #00b36e;
+}
+
+/* Para activar los link activos del sidenav */
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active,
+.sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
+  background-color: #00b36e;
+}
+
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
+.sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
+  color: #fff;
+}
+
+/* Para estilizar el dropdown */
+.dropdown-content li > a,
+.dropdown-content li > span {
+  font-size: 16px;
+  color: grey;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+/* Para cambiar el color del select en la parte de abajo */
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 2px solid #00b36e;
+}
+
+/* Autocomplete */
+.autocomplete-content li .highlight {
+  color: #00b36e;
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #51cb9d;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:before,
+.switch label input[type="checkbox"]:checked + .lever:after {
+  left: 18px;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: #00b36e;
+}
+
+.secondary-content {
+  /* float: right; */
+  color: #51cb9d;
+  font-weight: bolder;
+}
+
+.green.darken-2 {
+  background-color: #00b36e !important;
+}
+
+
+  .tabs .tab a {
+    color: #4DC698;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: color .28s ease, background-color .28s ease;
+    transition: color .28s ease, background-color .28s ease;
+  }
+  
+  .tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(178, 246, 204, 0.445);
+    outline: none;
+  }
+  
+  .tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #00b36e;
+  }
+  
+  .tabs .tab.disabled a,
+  .tabs .tab.disabled a:hover {
+    color: rgba(110, 238, 159, 0.4);
+    cursor: default;
+  }
+  
+  .tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #4DC698;
+    will-change: left, right;
+  }
+
+
+  /* RADIO BUTTON */
+
+  [type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #00b36e;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #00b36e;
+}
+
+/* Encabezados del SELECT */
+.select-dropdown li.optgroup > span {
+  color: #00b36e;
+  font-weight: bold;
+}
+
+/*Para subir el madar un poco mas */
+.modal.bottom-sheet {
+  top: auto;
+  bottom: -100%;
+  margin: 0;
+  width: 100%;
+  max-height: 85%;
+  border-radius: 0;
+  will-change: bottom, opacity;
+}
+
+
+
